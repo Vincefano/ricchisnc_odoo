@@ -1,0 +1,1 @@
+# ricchisnc_odoo
