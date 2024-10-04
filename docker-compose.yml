@@ -1,0 +1,26 @@
+services:
+  web:
+    image: odoo:latest
+    container_name: odoo_web
+    build:
+      context: .
+    depends_on:
+      - db
+    ports:
+      - "8069:8069"
+    develop:
+      watch:
+        - action: rebuild
+          path: ./addons
+          target: /mnt/extra-addons
+    volumes:
+      - ./config:/etc/odoo
+    environment:
+      - HOST=db
+    env_file: ./.env
+  db:
+    image: postgres:16
+    container_name: odoo_db
+    env_file: ./.env
+    volumes: 
+      - ./postgres:${PGDATA}:w
