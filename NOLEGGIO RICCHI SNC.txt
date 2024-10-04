@@ -1,0 +1,39 @@
+[noleggio breve termine]
+[noleggio lungo termine]
+
+1. sito web vetrina
+2. l'utente che si collega al sito può vedere: le auto, 
+
+
+
+[Da controllare] Vedere se il prezzo è condiviso tra applicazione e sito web.
+
+Quando 'Auto Consegnate' e 'Auto Noleggiate' modulo stampabile.
+
+
+Modificare email > @ricchisnc.it
+Modificare dominio > ricchisnc.
+
+-----------------------------------------------------
+
+Controllare se è possibile fare redirect tra vecchia email e nuova.
+
+-----------------------------------------------------
+
+Scegliere un nome che identifica tutto, non verticale su un solo servizio.
+
+
+-----------------------------------------------------
+
+1. Creazione sito web [ricreare] e integrarlo nel servizio
+2. Vedere se si riesce a far comunicare le informazioni del parco auto con la sezione auto del sito web
+3. Dentro l'applicazione decidere come fare le varie sezioni del noleggio nelle varie fasi.
+
+-----------------------------------------------------
+
+Ca.R.G.O.S. > Servizio di polizia di stato. Bisogna informarsi se si possono compilare i campi a questo servizio per 'autocompilarsi'.
+
+API: https://cargos.poliziadistato.it/CARGOS_API/
+
+-----------------------------------------------------
+
