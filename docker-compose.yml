@@ -1,6 +1,5 @@
 services:
   web:
-    image: odoo:latest
     container_name: odoo_web
     build:
       context: .
@@ -10,7 +9,7 @@ services:
       - "8069:8069"
     develop:
       watch:
-        - action: sync+restart
+        - action: rebuild
           path: ./addons
           target: /mnt/extra-addons
     volumes:
