@@ -7,11 +7,8 @@ ENV PROJECT_DIR=/home/odoo_project
 ENV LANG=C.UTF-8
 ENV LANGUAGE=en_US:en
 ENV LC_ALL=C.UTF-8
-
 USER $USER_NAME
-
 WORKDIR $PROJECT_DIR
-
 RUN mkdir -p $PROJECT_DIR
-
+COPY --chown=$USER_NAME ./addons /mnt/extra-addons
 COPY --chown=$USER_NAME . $PROJECT_DIR

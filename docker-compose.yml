@@ -10,7 +10,7 @@ services:
       - "8069:8069"
     develop:
       watch:
-        - action: rebuild
+        - action: sync+restart
           path: ./addons
           target: /mnt/extra-addons
     volumes:
