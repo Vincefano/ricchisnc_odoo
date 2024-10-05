@@ -1,0 +1,4 @@
+[options]
+admin_passwd = bellaPassword123!
+addons_path = /mnt/extra-addons
+data_dir = /var/lib/odoo

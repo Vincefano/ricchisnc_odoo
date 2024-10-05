@@ -1,8 +1,9 @@
 # HOW TO
 
 - Copia il file `env.example`, rinomina in `.env` e cambia i valori delle variabili desiderati.
+- Fai lo stesso con il file `odoo.conf.example` -> `odoo.conf`
+- Aggiorna il `command` nel `docker-compose.yml`, inserisci il nome dell'applicazione (nome della cartella)
 - usa `docker compose up --build --watch` per eseguire il container
-
 
 # FAQ
 

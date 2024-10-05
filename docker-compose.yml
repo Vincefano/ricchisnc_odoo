@@ -3,13 +3,14 @@ services:
     container_name: odoo_web
     build:
       context: .
+    command: ["odoo","-u", "{nome_applicazione}", "--dev","all,xml,reload"]
     depends_on:
       - db
     ports:
       - "8069:8069"
     develop:
       watch:
-        - action: rebuild
+        - action: sync+restart
           path: ./addons
           target: /mnt/extra-addons
     volumes:
